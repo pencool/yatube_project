@@ -8,5 +8,8 @@ def index(request):
     return render(request, 'posts/index.html')
 
 
-def group_posts(request, text):
-    return HttpResponse(f'Пока здесь видно только это: {text}')
+def group_posts(request):
+    return render(request, 'posts/group_list.html')
+
+#HttpResponse(f'Пока здесь видно только это: {text}')
+#, text)
