@@ -13,6 +13,7 @@ class PostAdmin(admin.ModelAdmin):
 class GroupAdmin(admin.ModelAdmin):
     list_display = ('pk', 'title', 'slug', 'description')
     search_fields = ('slug',)
+    empty_value_display = '-пусто-'
 
 
 admin.site.register(Post, PostAdmin)
